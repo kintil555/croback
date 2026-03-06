@@ -1,0 +1,23 @@
+name = "nexusbot-dashboard-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# KV Namespace untuk menyimpan settings server
+# Buat dengan: wrangler kv:namespace create "SETTINGS"
+# Lalu ganti id di bawah ini
+[[kv_namespaces]]
+binding = "KV_SETTINGS"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_KV_NAMESPACE_PREVIEW_ID"
+
+# Environment Variables
+# JANGAN taruh secret di sini! Gunakan `wrangler secret put`
+[vars]
+FRONTEND_URL = "https://your-frontend-domain.com"
+
+# Set secrets via CLI:
+# wrangler secret put DISCORD_CLIENT_ID
+# wrangler secret put DISCORD_CLIENT_SECRET
+# wrangler secret put DISCORD_BOT_TOKEN
+# wrangler secret put REDIRECT_URI
