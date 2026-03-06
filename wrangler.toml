@@ -8,7 +8,7 @@ compatibility_flags = ["nodejs_compat"]
 # Lalu ganti id di bawah ini
 [[kv_namespaces]]
 binding = "KV_SETTINGS"
-id = "9dd922eb20074c6a8702aab9f62151d6"
+id = "b3b8924a875743fb904c34863cfd3e37"
 preview_id = "YOUR_KV_NAMESPACE_PREVIEW_ID"
 
 # Environment Variables
